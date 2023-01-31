@@ -3,7 +3,7 @@ from dash import html, dcc
 import dash_bootstrap_components as dbc
 from .side_bar import sidebar
 
-dash.register_page(__name__)
+dash.register_page(__name__, title = 'AQ_Project')
 
 def layout():
     return html.Div([
@@ -18,11 +18,11 @@ def layout():
                 [
                     html.H3('Air Quality monitoring and modeling in Bogotá, D.C., Colombia', style={'textAlign':'center'}),
                     html.Hr(),
-                    dcc.Markdown('**Abstract:** d\n'
-                                 'relationship with lung cancer. Despite its potential health impacts, few studies have been carried out to\n'
-                                 'assess this public health problem in countries where RC measurements and research are scarce. This study aims\n'
-                                 'to contribute to the bridging of the baseline information gap by using inferential statistic methods to estimate\n'
-                                 'indoor RC spatial distribution and building an easy-to-use [webapp](https://indoorrn-modelingapp.onrender.com/) for RC modeling.'),
+                    dcc.Markdown("**Abstract:** Monitoring Air Quality (AQ) Networks are scarce in Latin America and when they exist they usually " 
+                                 "consist of widely spread AQ stations that don't reflect the real distribution of AQ throughout the city. In this "
+                                 "project I'm working with [Lucas Rivero Iribarne](https://www.lucasriveroiribarne.com/) to model AQ distribution "
+                                 "in the city of Bogotá, Colombia by using remotely sensed information and Machine Learning algorithms"
+                                 ),
                 ], xs=8, sm=8, md=10, lg=10, xl=10, xxl=10)
         ]
     )
