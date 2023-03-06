@@ -5,8 +5,10 @@ import dash_bootstrap_components as dbc
 def sidebar():
     nav_links = []
     for page in dash.page_registry.values():
-        if page["path"].startswith("/app2"):
+        if page["path"].startswith("/app3"):
             name = 'Air Quality RS'
+        elif page["path"].startswith("/app2"):
+            name = 'Machine Learning course project'
         else:
             name = page['path']
         if page["path"].startswith("/app"):
@@ -31,5 +33,5 @@ def sidebar():
             )
     return dbc.Nav(children=nav_links,
                    vertical=True,
-                   pills=True,
-                   className="bg-dark")
+                   pills=True,)
+                   # className="bg-dark")

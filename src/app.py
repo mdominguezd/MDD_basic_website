@@ -23,7 +23,7 @@ header = dbc.Navbar(
     color='#203442'
 )
 
-app.layout = dbc.Container([header, dash.page_container], fluid=True, style = {'color' : '#0c1921'})
+app.layout = dbc.Container([header, dash.page_container], fluid=True, style = {'color' : '#0c1921', 'background-color' : '##ffffff'})
 
 if __name__ == '__main__':
-	app.run_server()
+	app.run_server(port=8050)
