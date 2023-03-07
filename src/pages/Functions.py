@@ -20,8 +20,8 @@ def read_data(split = True):
         
     """
         
-    train = pd.read_csv("yield_data_1/potato_NL_train.csv", sep=",")
-    test  = pd.read_csv("yield_data_1/potato_NL_test.csv",  sep=",")
+    train = pd.read_csv("yield_data/potato_NL_train.csv", sep=",")
+    test  = pd.read_csv("yield_data/potato_NL_test.csv",  sep=",")
     
     if split:
         
