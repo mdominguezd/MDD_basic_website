@@ -20,8 +20,8 @@ def read_data(split = True):
         
     """
         
-    train = pd.read_csv("yield_data/potato_NL_train.csv", sep=",")
-    test  = pd.read_csv("yield_data/potato_NL_test.csv",  sep=",")
+    train = pd.read_csv("https://gist.github.com/ionathan/3206e24244286dd25efd9e8bb39f079e/raw/ecde6eb8cdd47acb9dbfe2bfba7c241bfae19844/potato_NL_train.csv", sep=",")
+    test  = pd.read_csv("https://gist.githubusercontent.com/ionathan/3206e24244286dd25efd9e8bb39f079e/raw/ecde6eb8cdd47acb9dbfe2bfba7c241bfae19844/potato_NL_test.csv",  sep=",")
     
     if split:
         
