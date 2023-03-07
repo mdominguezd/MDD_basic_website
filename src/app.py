@@ -2,10 +2,6 @@ import dash
 from dash import Dash, html
 import dash_bootstrap_components as dbc
 
-import os
-if 'yield_data' not in os.listdir():
-    !git clone https://gist.github.com/3206e24244286dd25efd9e8bb39f079e.git yield_data
-
 app = Dash(__name__, use_pages=True, external_stylesheets=[dbc.themes.LITERA])
 server = app.server
 
