@@ -3,7 +3,6 @@ from .side_bar import sidebar
 
 import dash
 from dash import Dash, dcc, html, callback, callback_context, dash_table
-from dash_bootstrap_templates import load_figure_template
 import dash_daq as daq
 from dash.dependencies import Input, Output, State
 
@@ -26,7 +25,6 @@ X_train, X_test, y_train, y_test = read_data()
 nuts2 = gpd.read_file('https://gisco-services.ec.europa.eu/distribution/v2/nuts/geojson/NUTS_RG_01M_2016_4326_LEVL_2.geojson')
 
 # Style parameters
-load_figure_template(["slate"])
 color = 'darkgreen'
 font_s = {'font-family' : 'bahnschrift'}
 
