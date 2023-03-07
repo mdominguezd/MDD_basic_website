@@ -5,7 +5,7 @@ geopandas
 statsmodels
 scikit-learn
 numpy
-pandas
+pandas==1.4.1
 plotly
 gunicorn
 dash-tools
