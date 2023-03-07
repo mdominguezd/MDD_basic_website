@@ -1,0 +1,11 @@
+dash==2.7.0
+dash-bootstrap-components
+dash-daq
+geopandas
+statsmodels
+scikit-learn
+numpy
+pandas==1.4.1
+plotly
+gunicorn
+dash-tools
