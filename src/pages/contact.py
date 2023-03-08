@@ -7,7 +7,8 @@ dash.register_page(__name__, order=3)
 green_text = {'color':'green'}
 
 def layout():
-    return html.Div([dbc.Row([dbc.Col([dcc.Markdown('# Martín Domínguez Durán', className='mt-3'),
+    return html.Div([html.Div([],style = {'height':50}),
+                     dbc.Row([dbc.Col([dcc.Markdown('# Martín Domínguez Durán', className='mt-3'),
                              dcc.Markdown('### Personal info', style={'color':'gray'}),
                              dcc.Markdown('**Phone Number**', style=green_text),
                              dcc.Markdown('+31 0651120353'),

@@ -7,17 +7,15 @@ dash.register_page(__name__, order=1)
 green_text = {'color':'green'}
 
 def layout():
-    return html.Div([dcc.Markdown('### Academic Experience', style={'textAlign': 'center'}),
-    html.Hr(),
-
-    dbc.Row([
-        dbc.Col([
-            dcc.Markdown('*Jul. 2018 - May 2019*', style={'textAlign': 'center'})
-        ], width=2),
-        dbc.Col([
-            dcc.Markdown('**Teaching assistant** \n'
-                         '  *Environmental Fluid Mechanics* - Professor [J. Plazas](https://www.linkedin.com/in/jplazas)\n'
-                         '  **Universidad de Los Andes** - Bogotá, Colombia',
+    return html.Div([html.Div([], style = {'height':30}),
+                     dcc.Markdown('### Academic Experience', style={'textAlign': 'center'}),
+                     html.Hr(),
+                     dbc.Row([dbc.Col([dcc.Markdown('*Jul. 2018 - May 2019*',
+                                                    style={'textAlign': 'center'})],
+                                      width=2),
+                              dbc.Col([dcc.Markdown('**Teaching assistant** \n'
+                                                    '  *Environmental Fluid Mechanics* - Professor [J. Plazas](https://www.linkedin.com/in/jplazas)\n'
+                                                    '  **Universidad de Los Andes** - Bogotá, Colombia',
                          style={'white-space': 'pre-wrap'},
                          link_target='_blank',
                          className='ms-3'),

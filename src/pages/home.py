@@ -16,10 +16,11 @@ layout = html.Div([
     dcc.Markdown('### Summary', style={'textAlign': 'center'}),
     html.Hr(),
     dbc.Col([dcc.Markdown('Environmental Engineer and Geoscientist from *Los Andes University, Bogotá, Colombia* and MSc Geo-Information student at\n'
-                 '*Wageningen University & Research, The Netherlands*. I am a **dynamic**, **hardworking** and **curious** professional with a particular\n'
-                 'interest in research topics involving environmental health, environmental modeling, data science, Geographic Information Systems\n'
-                 'and Remote Sensing. ',
-                 style={'textAlign': 'center', 'white-space' : 'pre-wrap'})]),
+                          '*Wageningen University & Research, The Netherlands*. I am a **dynamic**, **hardworking** and **curious** professional with a particular\n'
+                          'interest in research topics involving environmental health, environmental modeling, data science, Geographic Information Systems\n'
+                          'and Remote Sensing. I am passionate about making scientific research reproducible and accesible in non-scientfic contexts  by the\n'
+                          'creation of interactive dashboards.\n',
+                          style={'textAlign': 'center', 'white-space' : 'pre-wrap', 'font-family':'Arial'})]),
     html.Div([],style = {'height' : 20}),
     dcc.Markdown('### Education', style={'textAlign': 'center'}),
     html.Hr(),
