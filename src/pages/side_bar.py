@@ -5,9 +5,9 @@ import dash_bootstrap_components as dbc
 def sidebar():
     nav_links = []
     for page in dash.page_registry.values():
-        if page["path"].startswith("/app3"):
+        if page["path"].startswith("/app-aq"):
             name = 'Air Quality RS'
-        elif page["path"].startswith("/app2"):
+        elif page["path"].startswith("/app-ml"):
             name = 'Machine Learning course project'
         else:
             name = page['path']
