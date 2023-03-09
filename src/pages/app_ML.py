@@ -25,7 +25,7 @@ def layout():
                                     dcc.Markdown("When I followed the course Machine Learning during February and March 2023, I deeply enjoyed the programming of Machine Learning algorithms."
                                                  " However, I was always missing a visualization of the process that was being done. Therefore, I created an interactive dashboard where the user"
                                                  " can easily play with some parameters in regression, classificatiton and clustering alorithms to see the efffects on the output data. Click"
-                                                 " [here](www.google.com) to checkout the results of the dashboard.",
+                                                 " [here](https://ml-mgi-project-dashboard.onrender.com) to checkout the results of the dashboard.",
                                                  link_target='_blank'
                                                  ),
                                     html.B('Overview:', style = {'font-family' : 'bahnschrift', 'font-size' : 20}),
