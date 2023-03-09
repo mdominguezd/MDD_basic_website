@@ -20,7 +20,7 @@ def layout():
                                                     'to contribute to the bridging of the baseline information gap by using inferential statistic methods to estimate\n'
                                                     'indoor RC spatial distribution and building an easy-to-use [webapp](https://indoorrn-modelingapp.onrender.com/) for RC modeling.', link_target='_blank'),
                                        html.B('Overview:', style = {'font-family' : 'bahnschrift', 'font-size' : 20}),
-                                       html.Div([html.Img(src='../assets/Biseccion.gif', style = {'max-width' : '70%', 'height':'auto'})],
+                                       html.Div([html.Img(src='../assets/RN_dashboard.gif', style = {'max-width' : '70%', 'height':'auto'})],
                                                 style = {'textAlign' : 'center'}
                                                ),
                                       ], xs=8, sm=8, md=10, lg=10, xl=10, xxl=10)

@@ -4,6 +4,8 @@ import dash_bootstrap_components as dbc
 
 dash.register_page(__name__, path='/', order=0)
 
+font_B = {'font-family' : 'bahnschrift black', 'font-size' : 16}
+
 # resume sample template from https://zety.com/
 layout = html.Div([
     html.Div([],style = {'height':50}),
@@ -30,8 +32,8 @@ layout = html.Div([
                          style={'textAlign': 'center'})
         ], width=2),
         dbc.Col([
-            dcc.Markdown('B.Sc. Environmental Engineer (GPA: 4.45/5) - *Cum Laude*\n'
-                         '**Universidad de Los Andes** - Bogotá, Colombia',
+            html.B('B.Sc. Environmental Engineer (GPA: 4.45/5)', style = font_B),
+            dcc.Markdown('*Universidad de Los Andes* - Bogotá, Colombia',
                          style={'white-space': 'pre-wrap'},
                          className='ms-3'),
         ], width=5)
@@ -43,8 +45,8 @@ layout = html.Div([
                          style={'textAlign': 'center'})
         ], width=2),
         dbc.Col([
-            dcc.Markdown('B.Sc. Geoscientist (GPA: 4.45/5) \n'
-                         '**Universidad de Los Andes** - Bogotá, Colombia',
+            html.B('B.Sc. Geoscientist (GPA: 4.45/5)', style = font_B),
+            dcc.Markdown('*Universidad de Los Andes* - Bogotá, Colombia',
                          style={'white-space': 'pre-wrap'},
                          className='ms-3'),
         ], width=5)
@@ -56,8 +58,8 @@ layout = html.Div([
                          style={'textAlign': 'center'})
         ], width=2),
         dbc.Col([
-            dcc.Markdown('Minor in Photography \n'
-                         '**Universidad de Los Andes** - Bogotá, Colombia',
+            html.B('Minor in Photography', style = font_B),
+            dcc.Markdown('*Universidad de Los Andes* - Bogotá, Colombia',
                          style={'white-space': 'pre-wrap'},
                          className='ms-3'),
         ], width=5)
@@ -69,8 +71,8 @@ layout = html.Div([
                          style={'textAlign': 'center'})
         ], width=2),
         dbc.Col([
-            dcc.Markdown('M.Sc. Geo-Information Science \n'
-                         '**Wageningen University & Research** - Wageningen, Netherlands',
+            html.B('M.Sc. Geo-Information Science', style = font_B),
+            dcc.Markdown('*Wageningen University & Research* - Wageningen, Netherlands',
                          style={'white-space': 'pre-wrap'},
                          className='ms-3'),
         ], width=5)
