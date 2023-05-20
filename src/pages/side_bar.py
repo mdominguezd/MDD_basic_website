@@ -9,6 +9,8 @@ def sidebar():
             name = 'Air Quality RS'
         elif page["path"].startswith("/app-ml"):
             name = 'Machine Learning course project'
+        elif page["path"].startswith("/app-hear-n-now"):
+            name = 'Hear and Now project'
         else:
             name = page['path']
         if page["path"].startswith("/app"):
