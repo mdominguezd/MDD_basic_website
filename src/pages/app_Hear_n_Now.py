@@ -22,7 +22,7 @@ def layout():
                                     html.H3('Hear and Now: Interactive web application for bird diversity education', style={'textAlign':'center'}),
                                     html.Hr(),
                                     html.B('Abstract:', style = {'font-family' : 'bahnschrift', 'font-size' : 20}),
-                                    dcc.Markdown("Visit the dashboard [here](http://hearandnow.eu.pythonanywhere.com/).",
+                                    dcc.Markdown("Our goal is to develop an interactive web application where the users can get an immersive experience in the Achterhoek region. Notably, we want to provide the users with information about the bird diversity in the region, its relationship with the ecosystems found there and the effects of agricultural pressure on the habitat loss of the birds that are present in the area. Visit the dashboard [here](http://hearandnow.eu.pythonanywhere.com/).",
                                                  link_target='_blank'
                                                  ),
                                     html.B('Overview:', style = {'font-family' : 'bahnschrift', 'font-size' : 20}),
