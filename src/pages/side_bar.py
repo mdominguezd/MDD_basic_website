@@ -20,7 +20,7 @@ def sidebar():
                             html.Div(name, className="ms-2"),
                     ],
                     href=page["path"],
-                    active="exact",
+                    active="exact"
                 )
             )
         elif page["path"]=="/projects":
@@ -30,13 +30,16 @@ def sidebar():
                         html.Div("Rn Modeling project", className="ms-2"),
                     ],
                     href=page["path"],
-                    active="exact",
+                    active="exact"
                 )
             )
     return html.Div([html.H3('Projects'),
                      html.Hr(),
                      dbc.Nav(children=nav_links,
                              vertical=True,
-                             pills=True)
-                    ])
+                             pills=True,
+                             fill = True,
+                             style = {'background-color' : 'white', 'color' : '#203442'})
+                    ],
+                    style = {'width' : '100%'})
                    # className="bg-dark")
