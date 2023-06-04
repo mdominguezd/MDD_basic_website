@@ -29,19 +29,21 @@ header = dbc.Navbar(
                     align = 'start',
                     width={"size":"auto"}
                 ),
-            ]),
+            ], align = 'center'),
+            
+             dbc.Col(dbc.NavbarToggler(id="navbar-toggler", n_clicks=0)),
                 
-            # dbc.Row([
-            #     dbc.Col(
-            #         dbc.Nav([
-            #             dbc.NavItem(dbc.NavLink(html.I(className="bi-github"), href="https://github.com/mdominguezd",external_link=True) ),
-            #             dbc.NavItem(dbc.NavLink(html.I(className="bi bi-linkedin"), href="https://www.linkedin.com/in/mart%C3%ADn-dom%C3%ADnguez-dur%C3%A1n-54b4681b6/",external_link=True))
-            #         ], navbar=True
-            #         ),
-            #         align = 'center',
-            #         width={"size":"auto"}
-            #     )
-            # ], align = 'center')
+            dbc.Row([
+                dbc.Col(
+                    dbc.Nav([
+                        dbc.NavItem(dbc.NavLink(html.I(className="bi-github"), href="https://github.com/mdominguezd",external_link=True) ),
+                        dbc.NavItem(dbc.NavLink(html.I(className="bi bi-linkedin"), href="https://www.linkedin.com/in/mart%C3%ADn-dom%C3%ADnguez-dur%C3%A1n-54b4681b6/",external_link=True))
+                    ], navbar=True
+                    ),
+                    align = 'center',
+                    width={"size":"auto"}
+                )
+            ], align = 'center')
         ],
         fluid=True,
     ),
