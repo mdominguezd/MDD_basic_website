@@ -18,7 +18,7 @@ def layout():
                                                     'relationship with lung cancer. Despite its potential health impacts, few studies have been carried out to\n'
                                                     'assess this public health problem in countries where RC measurements and research are scarce. This project aims\n'
                                                     'to contribute to the bridging of the baseline information gap by using inferential statistic methods to estimate\n'
-                                                    'indoor RC spatial distribution and building an easy-to-use [webapp](https://indoorrn-modelingapp.onrender.com/) for RC modeling.', link_target='_blank'),
+                                                    'indoor RC spatial distribution and building an easy-to-use [webapp](ircmodelingdashboard.eu.pythonanywhere.com/) for RC modeling.', link_target='_blank'),
                                        html.B('Overview:', style = {'font-family' : 'bahnschrift', 'font-size' : 20}),
                                        html.Div([html.Img(src='../assets/RN_dashboard.gif', style = {'max-width' : '70%', 'height':'auto'})],
                                                 style = {'textAlign' : 'center'}
